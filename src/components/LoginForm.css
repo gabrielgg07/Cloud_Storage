@@ -1,0 +1,109 @@
+/* Importing a condensed, tech-friendly font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;  /* Use the new font */
+    background-color: #f4f7f9;  /* Light gray background for a clean look */
+    margin: 0;  /* No margin on body */
+    padding: 0;  /* No padding */
+}
+.Login{
+    display: flex;
+    flex-direction: column;
+}
+/* Styling the Header */
+.Header {
+    padding: 20px;
+    margin-top:10%;
+    text-align: center;
+}
+
+/* Styling the Header text */
+#Header-text {
+    color: #333;  /* Darker gray for a clean, modern look */
+    font-size: 36px;  /* Slightly larger size */
+    font-weight: 700;  /* Bold */
+    letter-spacing: 1px;  /* Add some spacing for a more spacious look */
+}
+
+/* Styling the subtext */
+.Header-subtext {
+    color: #6c757d;  /* Soft gray for the subtext */
+    font-size: 20px;  /* Slightly bigger size */
+    margin-top: 10px;
+    font-weight: 400;  /* Regular weight for the subtext */
+}
+
+.form-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+
+.input-container {
+    margin-bottom: 20px; /* Adds space between input fields */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* Label styling */
+  
+  /* Input box styling */
+  .input-box {
+    width: 100%;  /* Makes the input box take up the full width of its container */
+    padding: 12px;  /* Padding inside the input */
+    font-size: 16px;  /* Font size for text */
+    border-radius: 8px;  /* Rounded corners */
+    background-color: white;  /* White background */
+    align-items:  center;
+    border: none;  /* No border */
+    transition: all 0.3s ease;  /* Smooth transition for focus and hover */
+    z-index: 1;  /* Ensure it stays on top of other elements */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), /* Shadow on the bottom */
+                2px 0 5px rgba(0, 0, 0, 0.1), /* Light shadow on the right */
+                -2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow on the left */
+}
+
+/* Hover effect: Slightly increase the shadow and add a subtle scale effect */
+.input-box:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), /* Stronger bottom shadow */
+                4px 0 15px rgba(0, 0, 0, 0.2), /* Stronger right shadow */
+                -4px 0 15px rgba(0, 0, 0, 0.2); /* Stronger left shadow */
+}
+
+/* Focused input box effect */
+.input-box:focus {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), /* Stronger bottom shadow on focus */
+                4px 0 15px rgba(0, 0, 0, 0.2), /* Slight right shadow */
+                -4px 0 15px rgba(0, 0, 0, 0.2); /* Slight left shadow */
+    outline: none; /* Remove outline on focus */
+}
+
+#password {
+    margin-top: 10%;
+}
+
+
+/* Button styling */
+.action-button {
+    padding: 12px 20px;  /* Padding for the button */
+    background-color: #007bff;  /* Blue background */
+    color: white;  /* White text */
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+
+}
+
+.action-button:hover {
+    background-color: #0056b3;  /* Darker blue when hovered */
+}
+
+.action-button:focus {
+    outline: none;  /* Remove outline when button is focused */
+}
