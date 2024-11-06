@@ -8,7 +8,7 @@ const LoginForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await fetch('http://127.0.0.1:5000/register', {
+    const response = await fetch('  https://11c0-50-231-135-50.ngrok-free.app/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
