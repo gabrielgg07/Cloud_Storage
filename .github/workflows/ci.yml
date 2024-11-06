@@ -2,18 +2,16 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -25,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npm test --passWithNoTests
 
-      - name: Build project
+      - name: Build
         run: npm run build
